@@ -2,7 +2,7 @@
 
 ## About
 
-This is simple example of how to make dynamicaly lazy loaded list/grid/repeater in Vue. Lazy loader is based in standard manner on scroll of container which contains list. If scroll hits bottom position -> additional chunk of data is being loaded from datasource. All lazyloader control and data is inside **<a href="https://github.com/Sznapsollo/VueListLazyLoad/blob/master/dictionary/inc\js\components\listLazyLoad.js" target="_blank">"inc/js/components/listLazyLoad.js"</a>** file
+This is simple example of how to make dynamicaly lazy loaded list/grid/repeater in Vue. Lazy loader is based in standard manner on scroll of container which contains list. If scroll hits bottom position -> additional chunk of data is being loaded from datasource. All lazyloader control and data is inside **<a href="https://github.com/Sznapsollo/VueListLazyLoad/blob/master/inc/js/components/listLazyLoad.js" target="_blank">"inc/js/components/listLazyLoad.js"</a>** file
 
 ## Demo
 **<a href="http://cultrides.com/test/Github/VueListLazyLoad" target="_blank">Click here to see Demo</a>**
