@@ -25,14 +25,16 @@ if(isset($input->startRow) && is_numeric($input->startRow) && isset($input->endR
 	$endRow = $input->endRow;
 }
 
+// i know this looks strange but i have my reasons to have exactly this structure ;-)
 $returnObject = new stdClass();
-$returnObject->items = array();
+$returnObject->response = new stdClass();
 
 for($i=$startRow; $i < $endRow; $i++) {
 	$item = new stdClass();
-	$item->index = $i;
-	$item->name = generateRandomString();
-	$returnObject->items[] = $item;
+	$item->_id = $i;
+	$item->_schemaName = generateRandomString();
+	$returnObject->response->data[] = $item;
+	$returnObject->response->totalRows = 550;
 }
 
 echo json_encode($returnObject);
